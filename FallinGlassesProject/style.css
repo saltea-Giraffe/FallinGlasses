@@ -28,6 +28,14 @@ body {
     border: 2px solid #333;
 }
 
+#startButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 .glasses {
     position: absolute;
     width: 80px; /* 画像に合わせてサイズ調整 */
