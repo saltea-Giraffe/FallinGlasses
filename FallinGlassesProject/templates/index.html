@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FallinGlasses - タイトル画面</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="titleArea" class="centered">
+        <img src="{{ url_for('static', filename='images/title.png') }}" alt="FallinGlasses Title" id="indexTitleImage">
+    </div>
+    <div id="startButtonArea" class="centered">
+        <button id="startGameButton" onclick="window.location.href='/game'">はじめる！</button>
+    </div>
+</body>
+</html>
