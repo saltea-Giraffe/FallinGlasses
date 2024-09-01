@@ -16,31 +16,23 @@ body {
 
 #titleImage {
     width: 80%;
-    max-width: 500px;
+    max-width: 600px; /* タイトル画像の最大幅を調整 */
     height: auto;
 }
 
 #gameArea {
     position: relative;
-    width: 300px;
-    height: 500px;
+    width: 600px; /* 幅を大きく */
+    height: 800px; /* 高さを大きく */
     background-color: #e0e0e0;
     border: 2px solid #333;
 }
 
-#startButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
 .glasses {
     position: absolute;
-    width: 80px; /* 画像に合わせてサイズ調整 */
+    width: 100px; /* 眼鏡のサイズを調整 */
     height: auto;
-    left: 53%;
+    left: 55%; /* 眼鏡を少し右に移動 */
     transform: translateX(-50%);
 }
 
@@ -49,6 +41,13 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 150px; /* 画像に合わせてサイズ調整 */
+    width: 200px; /* キャラクターのサイズを調整 */
     height: auto;
+}
+
+#startButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
