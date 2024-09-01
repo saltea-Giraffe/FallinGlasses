@@ -30,10 +30,9 @@ body {
 
 .glasses {
     position: absolute;
-    width: 50px;
-    height: 20px;
-    background-color: black;
-    left: 50%;
+    width: 80px; /* 画像に合わせてサイズ調整 */
+    height: auto;
+    left: 53%;
     transform: translateX(-50%);
 }
 
@@ -42,7 +41,6 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 150px;
-    background-color: #87CEEB;
+    width: 150px; /* 画像に合わせてサイズ調整 */
+    height: auto;
 }
