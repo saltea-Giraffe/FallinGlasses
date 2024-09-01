@@ -8,25 +8,51 @@ body {
     align-items: center;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
-#titleArea {
+/* タイトル画面 (index.html) 用 */
+.centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
     width: 100%;
 }
 
-#titleImage {
-    max-width: 80%; /* タイトル画像の最大幅を調整 */
+#indexTitleImage {
+    width: 60%; /* タイトル画像を中央に大きく表示 */
+    height: auto;
+}
+
+#startButtonArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#startGameButton {
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ゲーム画面 (game.html) 用 */
+#titleArea {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#gameTitleImage {
+    width: 30%; /* ゲーム画面でのタイトル画像を3割に設定 */
     height: auto;
 }
 
 #gameArea {
     position: relative;
-    width: 600px; /* 幅を大きく */
-    height: 800px; /* 高さを大きく */
+    width: 700px; /* ゲームエリアの幅を大きく */
+    height: 900px; /* ゲームエリアの高さを大きく */
     background-color: #e0e0e0;
     border: 2px solid #333;
     display: flex;
@@ -38,7 +64,7 @@ body {
     position: absolute;
     width: 100px; /* 眼鏡のサイズを調整 */
     height: auto;
-    left: 55%; /* 眼鏡を少し右に移動 */
+    left: 50%; /* 眼鏡を中央に配置 */
     transform: translateX(-50%);
 }
 

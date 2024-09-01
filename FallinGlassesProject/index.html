@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FallinGlasses</title>
+    <title>FallinGlasses - タイトル画面</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="titleArea">
-        <img src="images/title.png" alt="FallinGlasses Title" id="titleImage">
+    <div id="titleArea" class="centered">
+        <img src="images/title.png" alt="FallinGlasses Title" id="indexTitleImage">
     </div>
-    <div id="gameArea">
-        <img src="images/glasses.png" class="glasses" id="glasses">
-        <img src="images/character.png" class="character" id="character">
+    <div id="startButtonArea" class="centered">
+        <button id="startGameButton">はじめる！</button>
     </div>
-    <button id="startButton">Start</button>
 
-    <script src="game.js"></script>
+    <script>
+        document.getElementById('startGameButton').addEventListener('click', function() {
+            window.location.href = 'game.html'; // ゲーム画面に遷移
+        });
+    </script>
 </body>
 </html>

@@ -34,7 +34,7 @@ document.addEventListener("keydown", (event) => {
 function resetGame() {
     // 眼鏡の位置をリセット
     glasses.style.top = "0px";
-    glasses.style.left = "55%"; // 初期位置を再設定
+    glasses.style.left = "50%"; // 初期位置を再設定
 
     // キャラクターの位置をリセット
     characterPosX = 200;  // 初期位置に戻す
@@ -43,18 +43,19 @@ function resetGame() {
     falling = true;  // 落下を開始できるように設定
 }
 
-// ゲームの更新ループ
 function update() {
     if (falling) {
         let glassesTop = parseInt(glasses.style.top || 0);
         glassesTop += glassesSpeed;
-        if (glassesTop + glasses.offsetHeight >= 800) { // 眼鏡が下端に到達したら停止
-            glassesTop = 800 - glasses.offsetHeight;  // 画面下端に位置を固定
+        if (glassesTop + glasses.offsetHeight >= 900) { // 眼鏡がもう少し下で止まるように調整
+            glassesTop = 900 - glasses.offsetHeight;  // 画面下端に近い位置で止まるように設定
             falling = false;
         }
         glasses.style.top = glassesTop + "px";
     }
     requestAnimationFrame(update);
 }
+
+
 
 update();
