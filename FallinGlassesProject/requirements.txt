@@ -2,3 +2,4 @@ Flask
 numpy
 opencv-python
 tensorflow  # or pytorch, if needed
+gunicorn
